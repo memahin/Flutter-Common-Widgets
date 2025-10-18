@@ -1,29 +1,128 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(App());
 }
 
-class App extends StatelessWidget{
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
-    );
+    return MaterialApp(home: HomePage());
   }
-
 }
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Rupantorsoft"),),
-      body: Center(
-        child: Text("Hello World!"),
+      appBar: AppBar(title: Text("Flutter Learn")),
+      body: Stack(
+        alignment: Alignment.topRight,
+        children: [
+          Container(width: 400, height: 400, color: Colors.grey),
+          Container(width: 300, height: 300, color: Colors.orange),
+          Container(width: 200, height: 200, color: Colors.black87),
+          Container(width: 100, height: 100, color: Colors.purple),
+        ],
+      )
+
+      /*
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(width: 50, height: 50, color: Colors.blue,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.red,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.amber,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.teal,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.lime,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.indigo,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.purple,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.orange,),
+          SizedBox(height: 2),
+          Divider(thickness: 2, color: Colors.orange),
+          Container(width: 50, height: 50, color: Colors.grey,),
+        ],
+      )
+
+
+      Row(
+        children: [
+          Container(width: 50, height: 50, color: Colors.blue),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.red),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.amber),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.teal),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.indigo),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.pinkAccent),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.blue),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.red),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.amber),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.teal),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.indigo),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.purple),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.lime),
+          SizedBox(height: 2),
+          Container(width: 50, height: 50, color: Colors.grey),
+        ],
       ),
+
+
+      child: Text("Hello Flutter!", style: TextStyle(
+          fontSize: 50,
+          fontWeight: FontWeight.w900,
+          color: Colors.deepPurple,
+          backgroundColor: Colors.black45,
+          letterSpacing: 20
+        ),),
+
+        child: RichText(text: TextSpan(
+          children: [
+            TextSpan(text: "Hello", style: TextStyle(color: Colors.black87,fontSize: 40)),
+            TextSpan(text: "Flutter", style: TextStyle(color: Colors.blueAccent,fontSize: 50,)),
+          ]
+        )),
+
+        child: Icon(Icons.account_tree_outlined, size: 90,color: Colors.black45,),
+
+        child: Image.network("https://tse3.mm.bing.net/th/id/OIP.LTYOo9hxyYVJg1xCjMCKeQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+        width: 500,
+        height: 600,
+        fit: BoxFit.contain,)
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+          child: Image.network("https://tse3.mm.bing.net/th/id/OIP.LTYOo9hxyYVJg1xCjMCKeQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"),
+        ),
+      ),
+        */
     );
   }
-
 }
