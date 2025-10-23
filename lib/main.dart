@@ -19,6 +19,26 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text("Flutter Learn")),
       body: Row(
         children: [
+          Flexible(
+            flex: 2,
+            child: Container(color: Colors.green, height: 100),
+          ),
+          Flexible(
+            flex: 1,
+            child: Container(color: Colors.yellow, height: 100),
+          ),
+          Flexible(
+            flex: 2,
+            child: Container(color: Colors.purple, height: 100),
+          ),
+        ],
+      )
+
+
+
+      /*
+      Row(
+        children: [
           Expanded(
             child: Container(color: Colors.red, height: 100,),
           ),
@@ -26,7 +46,6 @@ class HomePage extends StatelessWidget {
         ],
       )
 
-      /*
       Stack(
         alignment: Alignment.topRight,
         children: [
