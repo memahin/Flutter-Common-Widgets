@@ -17,12 +17,17 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Flutter Learn")),
-      body: Padding(
+      body: Align(
+        alignment: Alignment.bottomCenter,
+        child: Text("Bottom Center"),
+      )
+
+      /*
+      Padding(
         padding: const EdgeInsets.all(40.0),
         child: Text('Padded content'),
       )
 
-      /*
       Container(
         color: Colors.grey[200],
         width: double.infinity,
