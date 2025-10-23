@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(color: Colors.red, height: 100,),
           ),
-          Container(color: Colors.blue, height: 100, width: 100,),
+          Container(color: Colors.blue, height: 100, width: 150,),
         ],
       )
 
