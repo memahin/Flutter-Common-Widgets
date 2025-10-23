@@ -29,12 +29,10 @@ class HomePage extends StatelessWidget {
           ),
           Flexible(
             flex: 2,
-            child: Container(color: Colors.purple, height: 100),
+            child: Container(color: Colors.grey, height: 100),
           ),
         ],
       )
-
-
 
       /*
       Row(
@@ -42,7 +40,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(color: Colors.red, height: 100,),
           ),
-          Container(color: Colors.blue, height: 100, width: 150,),
+          Container(color: Colors.blue, height: 100, width: 100,),
         ],
       )
 
